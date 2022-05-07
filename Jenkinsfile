@@ -31,6 +31,12 @@ docker push demo/demo:v1'''
       }
     }
 
+    stage('Docker Push') {
+      steps {
+        sh 'docker push dipesh017/demo:v1'
+      }
+    }
+
   }
   environment {
     APP_NAME = 'sample-app'
